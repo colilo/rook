@@ -233,3 +233,9 @@ ceph dashboard set-rgw-api-secret-key <secret-key>
 ```
 
 Now you can access the *Object Gateway* menu items.
+If the *Object Gateway* is still inaccessible, you can try to restart the dashboard.
+```
+# Restart dashboard
+ceph mgr module disable dashboard
+ceph mgr module enable dashboard
+```
